@@ -1,0 +1,70 @@
+(05/06/2022) SUNDAY
+ Java Questions & Answers
+1.What Is OOPS Stands For?
+           OOPS-Object oriented Programming Language.
+               Types
+                 * Abstraction
+                * Inheritance
+               * Polymorphism
+              * Encapsulation
+2.What is Polymorphism?Explain Types?
+       Polymorphism is the ability to process objects differently on the basis of their class and data types.
+               Two Types of Polymorphism.
+                       * Compile Time Polymorphism.
+                       * Run Time  Polymorphism.
+3. What is Interface and Example in Java&Selenium?
+        * An Interface in Java is a blueprint of a class. A Java interface contains static constants and abstract methods.
+       * Interface is a Design.
+      * 100% Unimplemented Methods.
+  Example in Java.
+           * List 
+           * Set
+           * Collection
+  Example in Selenium
+         * Webdriver
+         * WebElement
+          * Search Context
+4.What is Abstract Class and Example?
+    * Abstract Class is a restricted class that cannot be used to create objects.
+    * Abstract class can only be used in an abstract class,and it does not have a body.
+    * It is Partially Implemented.
+ Example in Java 
+      * Abstract List
+      * Abstract Collection
+ Example in Selenium
+          * By
+5.Difference Between Multiple Inheritance and Multilevel Inheritance?
+   Multiple Inheritance
+        * Multiple Inheritance is when a class inherits from many base classes.
+        * Multiple Inheritance is not widely used because it makes the system more complex.
+  Multilevel Inheritance
+          * Multilevel Inheritance is an inheritance type that inherits from a derived class,making that derived class a base class for a new class.
+          * Multilevel Inheritance is widely used.
+6.Is Multiple Inheritance possible in Java?
+            * The Java Programming language supports multiple inheritance of type.
+            * Which is the ability of a class to implement more than one interface.
+            * An object can have multiple types.
+            * The type of its own class and the types of all the interfaces that the class implements.
+7.What is Keyword for using inheritance?
+         * The extends Keyword extends a class.
+         * In Java,it is possible to inherit attributes and methods from one class to another.
+8.What is the keyword to connect interface and class?
+          * The interface keyword is used to declare a special type of class that only contains abstract methods.
+          * The interface must be implemented by another class with the implements keyword.
+9.What is the Difference between Class and Interface?
+           Class
+               * A class describes the attributes and behaviours of an object.
+               * A class may contains abstract methods,concrete methods.
+           Interface
+                * An interface contains behaviours that a class implements.
+                * An interface contains only abstract methods.
+10.What is the Difference between class and abstract class?
+           Class
+               *  Class is a Template Used to Create Objects and to define object data Types and Methods.
+              * Classes are Categories,and Objects are items Within Each Category.
+             Abstract Class
+                  *Abstract Class is a Class that is declared Abstract.
+                 * It May or or May Not Include Abstract Methods.
+                 * Abstract Class Cannot Be Instantiated.
+
+           

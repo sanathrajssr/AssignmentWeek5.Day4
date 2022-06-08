@@ -1,0 +1,71 @@
+(05/06/2022) SUNDAY
+Selenium Question and Answers
+1.What Are The Exceptions Thrown By Alert,Frame,Windows?
+          * NoSuchElementException.
+          * NoSuchWindowException.
+          * NoSuchFramedException.
+          * NoAlertPresentException.
+          * InvalidSelectorException.
+2.What are the three types of alerts?Various actions that can be performed on an alert?Can ou take Screenshot of an alert?
+              * Simple Alert.
+              * Confirmation Alert.
+              * Prompt Alert.
+        Simple Alert
+             Simple Alert just has an OK button on them.
+        Confirmation Alert
+              This type of alert comes with an option to accept or dismiss the alert.
+        Prompt Alert
+              In prompt alerts,you get an option to add a text field to the alert box.
+        It Can't able to take Screenshot in an alert
+3.How to handle the frame in Selenium Webdriver?
+       SwitchTo().frame(frameNumber)
+               This method uses the frame id as the parameter.
+       SwitchTo().frame(frameName)
+                This method uses the frame name as defined by the developer as the parameter.
+       SwitchTo().frame(WebElement)
+                This method uses the Webelement as the parameter.
+4.Assume you are within a frame.Explain how can you switch back from a frame?
+            * To move back to the parent frame.
+            * You can either use SwitchTo().ParentFrame().
+            * ParentFrame()or if you want to get back to the main frame.
+            * MainFrame,you can use SwitchTo().defaultContent;driver.
+5.Explain the Difference between getWindowHandle and getWindowHandles?
+           getWindowHandle
+                 * The getWindowHandle method is used to store the window handle of the browser window is in focus.
+                 * It gets the address of the active browser an it has a return type of String.
+           getWindowHandles
+                 * The getWindowHandles is used to store all the opened window handles in the set data structure.
+                 * The getWindowHandles and getWindowHandle method can be used to handle child windows.
+6.How will you close all the windows open except the parent window?
+             String ParentWindowHandle=driver.getWindowHandle();
+             Set<String>WindowHandles=driver.getWindowHandles();
+              
+               For (String eachHadle :WindowHandles) {
+                    if(!EachHandle.equals(parentWindowHandle)) {
+                   driver.SwitchTo().window(EachHandle).Close();
+                                 }
+                           }
+
+7.To close an alert,use either dimiss(negative)or accept(positive)method?
+            Switch From the Browser To Alert
+                  SwitchTo() Method Returns TargetLocator Interface
+              Alert() Method Returns Alert Interface
+             Alert alert = driver.SwitchTo().alert();
+            Accept The Alert and Accept Method Returns Void
+        Alert.Accept();
+          If The Alert Does Not Exist During Switch -itThrows NoAlertPresentException Class.
+
+8.How To Move The Control To Last Window Opened By Selenium?
+       * Get the handles of all the windows that are currently open using the command.
+       * Set<String>allWindowHandles=driver.getWindowHandles();which returns the set of the handles.
+       * Use the Switch To command to Switch to the desired window and also pass the URL of the web page.
+9.Different Between Parentframe and Defaultcontent?
+       ParentFrame
+            * ParentFrame() is generally used to switch the control back to the parent frame.
+       DefaultContent 
+             * DefaultContent() is used to switch the control back to default content in the window.
+             
+
+      
+        
+ 
